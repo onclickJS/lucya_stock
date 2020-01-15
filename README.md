@@ -1,0 +1,1 @@
+"# lucya_stock" 
