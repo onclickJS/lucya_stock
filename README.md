@@ -26,6 +26,12 @@ npm test
 
 For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
 
-## bootstrap
+## UI - bootstrap
 
 https://bootstrap-vue.js.org/docs
+
+## Utils
+
+### excel
+
+xslx {@link https://github.com/SheetJS/sheetjs#installation}

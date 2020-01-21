@@ -1,20 +1,23 @@
-import firebase from "firebase";
+import Firebase from "firebase";
 
 var config = {
-    apiKey: "AIzaSyBDbUuTlk5BSixKQYK-v6XFhqneFiusjMY",
-    databaseURL: "https://lucya-stock-category.firebaseio.com/",
-    projectId: "lucya-stock-category"
+    apiKey: "AIzaSyD6J7J5S5jUeudRJFbdOR7euCEXT7_bKD0",
+    databaseURL: "https://lucya-stock.firebaseio.com/",
+    projectId: "lucya-stock"
 };
-firebase.initializeApp(config);
 
+Firebase.initializeApp(config);
+console.log(Firebase.app().name);
+
+// 데이터베이스 초기화
 export const db = firebase.database();
-var tableUrl = "/lucya_db_stock_keywords/mGd6o71hK3qa0AkDszi0";
+var tableUrl = "/stock-keywords";
 
-// const app = {
-//     firebase: {
-//         stocks: db.ref("lucya_db_stock_keywords") // db 데이터베이스에 'todos' 테이블을 참조하기 위한 코드임.
-//     }
-// };
+export const fb = {
+    Firebase: {
+        stocks: db.ref(tableUrl) // refFH 
+    }
+};
 
 function writeStockRow(stockMarket, stockCode, stock, keywords) {
     db.ref(tableUrl).set({

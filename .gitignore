@@ -15,9 +15,8 @@ yarn-error.log*
 *.sln
 test/
 static/.gitkeep
-.babelrc
 .editorconfig
 .postcssrc.js
 firebase-debug.log
 firestore-debug.log
-build/
+
